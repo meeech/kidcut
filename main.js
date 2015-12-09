@@ -1,4 +1,3 @@
-var _ = require('lodash');
 var ffmpeg = require('fluent-ffmpeg');
 
 var kidcut = require('./kidcut');
