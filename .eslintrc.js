@@ -16,7 +16,7 @@ module.exports = {
             2,
             "always"
         ],
-        "no-console": false
+        "no-console": 0
     },
     "env": {
         "es6": true,

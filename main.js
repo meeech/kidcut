@@ -9,7 +9,7 @@ var timecodes = kidcut.getTimecodes();
 
 var index = 0;
 
-function generateClip(time, index){
+function generateClip(time){
 
   var duration = kidcut.calculateDuration(time.start, time.end);
   console.log('Generating clip start:', time.start, 'end:', time.end, 'dur:', duration);
@@ -30,6 +30,8 @@ function generateClip(time, index){
     if(next) {
       index = index + 1;
       generateClip(next, index);
+    } else {
+      merge();
     }
   });
 
@@ -37,6 +39,36 @@ function generateClip(time, index){
   video.duration(duration);
   video.output(output_dir + 'clip_' + index +'.mp4');
   video.run();
+
+}
+
+function merge() {
+
+  var video;
+  var i;
+  var input_file;
+  for (i = 0; i <= index; i++) {
+    input_file = output_dir + 'clip_' + i + '.mp4';
+    if(!video) {
+      video = ffmpeg(input_file);
+    } else {
+      video.input(input_file);
+    }
+  }
+
+  video.on('progress', function(progress) {
+    console.log('Processing: ' + Math.round(progress.percent * 100) + '% done');
+  });
+
+  video.on('end', function() {
+    console.log('files have been merged succesfully');
+  });
+
+  video.on('error', function(err) {
+    console.log('an error happened: ', err.message);
+  });
+
+  video.mergeToFile(output_dir + 'superclip.mp4');
 
 }
 
