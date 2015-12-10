@@ -35,8 +35,10 @@ Simple js file. [TKTKTK]
 
     * add support for supercut file with defined source files and codes to make one big supercut. basic idea is to make something like lightsaber-battle cut across all the films to one file 
     * put on npm
-    * clean up pieces after merge
     * list: if no cut provided, allow picking from list
     * expose more output options
     * can run more cutters at once to speed up process?
-    
+
+## MAYBE
+
+    * Suppress cleanup behaviour? is it useful to have the pieces remaining?
