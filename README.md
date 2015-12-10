@@ -23,6 +23,8 @@ ffmpeg
 
 `kidcut name-of-cut -i "path/to/film"`
 
+`node index.js -i source/StarWars_A_New_Hope.mov -c cuts/starwars-ep4.js create`
+
 ## TODO
 
     * list: if no cut provided, allow picking from list
