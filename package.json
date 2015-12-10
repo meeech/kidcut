@@ -9,12 +9,13 @@
   },
   "author": "Mitchell Amihod <mitchell.amihod@gmail.com>",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/meeech/kidcut.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meeech/kidcut.git"
   },
   "dependencies": {
     "cli": "^0.11.1",
-    "fluent-ffmpeg": "^2.0.1"
+    "fluent-ffmpeg": "^2.0.1",
+    "lodash": "^3.10.1"
   }
 }
