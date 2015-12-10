@@ -25,7 +25,6 @@ ffmpeg
 
 ## TODO
 
-    * allow passing in path to a cut file
-    * -c, --cuts list all cuts available
-    * -o, --output pass in output dir
+    * list: if no cut provided, allow picking from list
     * expose more output options
+    * can run more cutters at once to speed up process?

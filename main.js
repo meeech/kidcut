@@ -1,7 +1,7 @@
 var ffmpeg = require('fluent-ffmpeg');
 
 var kidcut = require('./kidcut');
-//
+
 var filename = '/Users/mitch/src/kidcut/tmp/StarWars_A_New_Hope.mov';
 var output_dir = '/Users/mitch/src/kidcut/tmp/';
 var timecodes = kidcut.getTimecodes();
