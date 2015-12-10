@@ -1,4 +1,4 @@
-var cli = require('cli');
+var cli = require('cli').enable('status');
 var fs = require('fs');
 var path = require('path');
 var cut = require('./lib/cut.js');
@@ -14,7 +14,6 @@ var commands = ['create'];
 cli.parse(options, commands);
 
 cli.main(function(args, options){
-  // console.log('cli main', args, options, this.command);
 
   var input, output, cut_file, filename;
 
