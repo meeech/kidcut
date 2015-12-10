@@ -1,16 +1,20 @@
 {
   "name": "kidcut",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Make kid friendly cuts, easy.",
+  "bin": { "kidcut": "./index.js" },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mitchell Amihod <mitchell.amihod@gmail.com>",
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/meeech/kidcut.git"
+  },
   "dependencies": {
     "cli": "^0.11.1",
-    "fluent-ffmpeg": "^2.0.1",
-    "lodash": "^3.10.1"
+    "fluent-ffmpeg": "^2.0.1"
   }
 }
