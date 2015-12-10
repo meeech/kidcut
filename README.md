@@ -19,14 +19,20 @@ ffmpeg
 
 ## USAGE
 
-* edit config.js with output dir
+`kidcut` for help
+ 
+`kidcut -i path/to/input/file.mp4 -o path/to/output_dir/ -c path/to/cut/file`
 
-`kidcut name-of-cut -i "path/to/film"`
+`kidcut -i source/StarWars_A_New_Hope.mov -c cuts/starwars-ep4.js create`
 
-`node index.js -i source/StarWars_A_New_Hope.mov -c cuts/starwars-ep4.js create`
+-o is optional - if you don't provide output directory, will use same dir as source
+
+## CUT FILE FORMAT
+
+Simple js file. [TKTKTK]
 
 ## TODO
-
+    * clean up pieces after merge
     * list: if no cut provided, allow picking from list
     * expose more output options
     * can run more cutters at once to speed up process?
