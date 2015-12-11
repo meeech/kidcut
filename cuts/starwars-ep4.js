@@ -3,8 +3,11 @@ module.exports = {
   data: {
     title: 'Star Wars Episode IV A New Hope',
     description: 'Info about what makes this cut interesting',
+
     //Can be used to validate you have the same copy?
     uuid: 'torrent-hash-here',
+
+    //Give your cut a rating
     rating: 'G'
   },
 

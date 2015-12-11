@@ -20,12 +20,17 @@ ffmpeg
 ## USAGE
 
 `kidcut` for help
- 
-`kidcut -i path/to/input/file.mp4 -o path/to/output_dir/ -c path/to/cut/file`
 
-`kidcut -i source/StarWars_A_New_Hope.mov -c cuts/starwars-ep4.js create`
+`kidcut -i source/StarWars_A_New_Hope.mov create` will use the source file you specify, and present you with a list of cuts to choose from
 
+`kidcut -i path/to/input/file.mp4 -c path/to/cut/file create` will use the source file you specify, and use the specified cut file
+
+`kidcut -i path/to/input/file.mp4 -o path/to/output_dir/ -c path/to/cut/file` all of the above, but -o will determine where to put the output file
+
+-c is optional - if you don't provide the cut file, you will be given a list to choose form
 -o is optional - if you don't provide output directory, will use same dir as source
+
+`kidcut list` will list out the available cuts
 
 ## CUT FILE FORMAT
 
