@@ -30,7 +30,9 @@ ffmpeg
 -c is optional - if you don't provide the cut file, you will be given a list to choose form
 -o is optional - if you don't provide output directory, will use same dir as source
 
-`kidcut list` will list out the available cuts
+`kidcut list` will list out the available cuts 
+
+`kidcut list -i path/to/input/file.mp4 create <cut_name>` cut_name is the name you saw when you `kidcut list`
 
 ## CUT FILE FORMAT
 
@@ -42,7 +44,6 @@ Went with js since it will allow for some interesting possibilities in generatin
 
     * add support for supercut file with defined source files and codes to make one big supercut. basic idea is to make something like lightsaber-battle cut across all the films to one file 
     * put on npm
-    * list: if no cut provided, allow picking from list
     * expose more output options
     * can run more cutters at once to speed up process?
 
