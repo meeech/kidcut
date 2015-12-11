@@ -31,6 +31,8 @@ ffmpeg
 
 Simple js file. [TKTKTK]
 
+Went with js since it will allow for some interesting possibilities in generating timecodes.
+
 ## TODO
 
     * add support for supercut file with defined source files and codes to make one big supercut. basic idea is to make something like lightsaber-battle cut across all the films to one file 
