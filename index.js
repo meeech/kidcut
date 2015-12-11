@@ -2,6 +2,7 @@ var cli = require('cli').enable('status');
 var fs = require('fs');
 var path = require('path');
 var cut = require('./lib/cut.js');
+var cut_list_menu = require('./lib/cut_menu.js');
 
 var options = {
   input: ['i', 'Path to the input file', 'file'],
@@ -34,18 +35,31 @@ cli.main(function(args, options){
   cli.debug('output: ' + output);
 
   if(options.cut) {
+
     cut_file = path.resolve(options.cut);
     try {
       fs.accessSync(cut_file);
     } catch(e) {
       cli.fatal('Cut file not found:' + cut_file);
     }
+
+    cut.start(input, output, cut_file);
+
   } else {
-    cli.fatal('No cut selected');
-    //show list?
-    //make sure file exists
+
+    var cut_promise = cut_list_menu(cut_file);
+
+    cut_promise.then(function(data){
+      //find cut file
+      console.log('then', data);
+    });
+
+    cut_promise.catch(function(data) {
+      console.error('choice', data);
+      cli.fatal('There was a problem with your choice.');
+    });
   }
 
-  cut.start(input, output, cut_file);
+  //
 
 });
