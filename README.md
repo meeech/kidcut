@@ -41,12 +41,13 @@ Simple js file. [TKTKTK]
 Went with js since it will allow for some interesting possibilities in generating timecodes.
 
 ## TODO
-
+    * validation: make sure tc end is later than tc start
+    * dont use cli log functions except in CLI related code
     * add support for supercut file with defined source files and codes to make one big supercut. basic idea is to make something like lightsaber-battle cut across all the films to one file 
     * put on npm
     * expose more output options
     * can run more cutters at once to speed up process?
-
+    * generate time-code mappings from old to new
 ## MAYBE
 
     * Suppress cleanup behaviour? is it useful to have the pieces remaining?
