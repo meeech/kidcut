@@ -8,7 +8,7 @@ module.exports = {
     uuid: 'torrent-hash-here',
 
     //Give your cut a rating
-    rating: 'G'
+    rating: 'PG'
   },
 
   times: [
@@ -32,7 +32,7 @@ module.exports = {
     , { start: '00:38:05', end: '00:38:09' }
     //skip evil conference of admirals, lack of faith disturbing,
     //the whole dead jawas, lukes family
-    , { start: '00:40:55', end: '41:00:00' }
+    , { start: '00:40:55', end: '00:41:00' }
     //cantina
     , { start: '00:42:28', end: '00:46:35' }
     , { start: '00:47:19', end: '00:49:58' }
@@ -63,11 +63,13 @@ module.exports = {
 
     , { start: '01:31:56', end: '01:32:17' }
 
-    //death of obiwan, escape from DS
-    , { start: '01:32:18', end: '01:34:01' }
+    //death of obiwanskipped, escape from DS
+    , { start: '01:32:18', end: '01:32:22' }
+    , { start: '01:33:37', end: '01:33:47' }
+    // , { start: '01:32:23', end: '01:34:01' }
 
     // tie fight vs MF
-    , { start: '01:34:02', end: '01:36:29' }
+    , { start: '01:34:02', end: '01:36:30' }
 
     , { start: '01:38:07', end: '01:38:30' }
     , { start: '01:38:31', end: '01:41:15' }
