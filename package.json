@@ -1,8 +1,8 @@
 {
   "name": "kidcut",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make kid friendly cuts, easy.",
-  "bin": "./cli.js",
+  "bin": "./index.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var cli = require('cli').enable('status');
 
 var options = {
