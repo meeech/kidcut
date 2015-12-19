@@ -21,18 +21,21 @@ ffmpeg
 
 `kidcut` for help
 
+`kidcut list` will list out the available cuts 
+
+`kidcut -i path/to/input/file.mp4 create <cut_name>` cut_name is the name you saw when you `kidcut list`
+
 `kidcut -i source/StarWars_A_New_Hope.mov create` will use the source file you specify, and present you with a list of cuts to choose from
 
 `kidcut -i path/to/input/file.mp4 -c path/to/cut/file create` will use the source file you specify, and use the specified cut file
 
 `kidcut -i path/to/input/file.mp4 -o path/to/output_dir/ -c path/to/cut/file` all of the above, but -o will determine where to put the output file
 
--c is optional - if you don't provide the cut file, you will be given a list to choose from
--o is optional - if you don't provide output directory, will use same dir as source
+## OPTIONS
 
-`kidcut list` will list out the available cuts 
-
-`kidcut list -i path/to/input/file.mp4 create <cut_name>` cut_name is the name you saw when you `kidcut list`
+-c optional - path to a custom cut file to use. If you don't provide the cut file, you will be given a list to choose from
+-o optional - if you don't provide output directory, will use same directory as source
+-n optional - 
 
 ## CUT FILE FORMAT
 
@@ -49,6 +52,5 @@ Went with js since it will allow for some interesting possibilities in generatin
     * expose more output options
     * can run more cutters at once to speed up process?
     * generate time-code mappings from old to new
-## MAYBE
 
-    * Suppress cleanup behaviour? is it useful to have the pieces remaining?
+    
