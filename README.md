@@ -27,7 +27,7 @@ ffmpeg
 
 `kidcut -i path/to/input/file.mp4 -o path/to/output_dir/ -c path/to/cut/file` all of the above, but -o will determine where to put the output file
 
--c is optional - if you don't provide the cut file, you will be given a list to choose form
+-c is optional - if you don't provide the cut file, you will be given a list to choose from
 -o is optional - if you don't provide output directory, will use same dir as source
 
 `kidcut list` will list out the available cuts 
