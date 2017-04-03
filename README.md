@@ -39,7 +39,7 @@ ffmpeg
 
 ## CUT FILE FORMAT
 
-Simple js file. [TKTKTK]
+Simple js file. See exmaple in cuts folder. 
 
 Went with js since it will allow for some interesting possibilities in generating timecodes.
 
@@ -48,9 +48,6 @@ Went with js since it will allow for some interesting possibilities in generatin
     * validation: make sure tc end is later than tc start, and throw warnings got certain threshholds! eg: i made tc 00:40:55 to 41:00:00 - ouch!
     * dont use cli log functions except in CLI related code
     * add support for supercut file with defined source files and codes to make one big supercut. basic idea is to make something like lightsaber-battle cut across all the films to one file 
-    * put on npm
     * expose more output options
     * can run more cutters at once to speed up process?
     * generate time-code mappings from old to new
-
-    
