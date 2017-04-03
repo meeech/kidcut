@@ -2,7 +2,7 @@ module.exports = {
 
   data: {
     title: 'Star Wars Episode IV A New Hope',
-    description: 'Info about what makes this cut interesting',
+    description: 'Tried to cut most of the on screen deaths, targeted at 4/5 year old',
 
     //Can be used to validate you have the same copy?
     uuid: 'torrent-hash-here',
